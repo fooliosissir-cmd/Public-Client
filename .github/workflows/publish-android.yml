@@ -1,0 +1,70 @@
+name: Publish Burial Grounds Android
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - ".publish-android-source"
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout public client repository
+        uses: actions/checkout@v4
+
+      - name: Publish Android APK
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [[ ! -f .publish-android-source ]]; then
+            echo "No publish source present; nothing to do."
+            exit 0
+          fi
+
+          SOURCE_URL="$(cat .publish-android-source)"
+          test -n "$SOURCE_URL"
+
+          curl --fail --location --retry 3 --retry-delay 2 "$SOURCE_URL" -o /tmp/android-artifact.zip
+          rm -rf /tmp/android-apk
+          mkdir -p /tmp/android-apk
+          unzip -j /tmp/android-artifact.zip '*.apk' -d /tmp/android-apk
+
+          APK="$(find /tmp/android-apk -maxdepth 1 -type f -name '*.apk' | head -1)"
+          test -n "$APK"
+
+          mkdir -p Android
+          cp "$APK" Android/BurialGrounds-Android.apk
+          (
+            cd Android
+            sha256sum BurialGrounds-Android.apk > BurialGrounds-Android.sha256
+          )
+
+          cat > Android/README.md <<'EOF'
+          # Burial Grounds — Android
+
+          Download **BurialGrounds-Android.apk** and install it on your Android device.
+
+          Current public build: **v0.2.6**.
+
+          This build uses the server-driven native quest guidance system. The old floating Android **Q** quest-helper overlay is not included.
+
+          Mobile controls include one-finger camera movement, two-finger pinch-to-zoom, long-press haptic feedback, and the current Android keyboard/login fixes.
+          EOF
+
+          rm .publish-android-source
+
+          git config user.name "Burial Grounds Release Bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add Android .publish-android-source
+          if git diff --cached --quiet; then
+            echo "No public Android changes to publish."
+            exit 0
+          fi
+          git commit -m "Publish BurialGrounds Android v0.2.6"
+          git push
