@@ -1,8 +1,8 @@
-# Burial Grounds — Public Client Downloads
+# Burial Grounds — Downloads
 
-Official public client downloads for Burial Grounds.
+Choose your platform:
 
-- **Windows/Desktop:** download the latest `.zip`, extract it, then run the included launcher.
-- **Android:** download the latest `.apk` and install it.
+- **Android** — open the `Android` folder and install `BurialGrounds-Android.apk`.
+- **Windows/Desktop** — open the `Desktop` folder, download `BurialGrounds-Windows.zip`, extract it, and run the included launcher.
 
-Both public clients are intended to connect to the live Main World.
+These are the public Burial Grounds game clients. You do not need the server source to play.
