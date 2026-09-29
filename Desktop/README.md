@@ -1,9 +1,9 @@
-# Burial Grounds — Windows/Desktop
+# Burial Grounds — Desktop
 
-Download **BurialGrounds-Windows.zip**.
+Download the current Windows desktop client:
 
-1. Extract the ZIP.
-2. Open the extracted Burial Grounds folder.
-3. Run the included Burial Grounds launcher/start file.
+**BurialGrounds-Windows.zip**
 
-Do not try to run the ZIP without extracting it first.
+This ZIP contains the current Burial Grounds Desktop Build 7 package.
+
+SHA-256: `1e8f1b365a6c025872f8b694ec1aba91e5b0863a8614f78358c0ee3de04f8c2e`

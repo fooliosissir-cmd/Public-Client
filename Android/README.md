@@ -1,7 +1,9 @@
 # Burial Grounds — Android
 
-The public Android APK is temporarily withheld while the current Darkan revision-727 client completes final runtime/device verification.
+Download the Android client directly as an APK:
 
-The next Android release is the Darkan-based Burial Grounds client line beginning with **v0.2.8**. Older Android APKs are not supported and should not be used.
+**BurialGrounds-Android-0.2.8-dev.apk**
 
-The release APK will be published here only after install, launch, live-server connection, rendering, login/input, audio, and update-channel checks pass.
+This is the current Darkan revision-727 Burial Grounds Android client. The APK itself is stored in this folder; players do **not** need to download or unpack a ZIP file.
+
+SHA-256: `22f01aada2db5b3f5e59b06a9ef4809b73fe0ac2c3ae1fc85dc9315f0a97aa10`

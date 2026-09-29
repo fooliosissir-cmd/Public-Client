@@ -1,5 +1,8 @@
 # Burial Grounds — Downloads
 
-Public client downloads are temporarily unavailable while the current Darkan-based Android and desktop clients are being finalized and verified.
+Current public client downloads:
 
-Do not use any older Burial Grounds client builds. New downloads will be published here only after they are built from the current Darkan client source and pass install/login/runtime verification.
+- **Android:** `Android/BurialGrounds-Android-0.2.8-dev.apk` — direct APK download, no ZIP required.
+- **Windows Desktop:** `Desktop/BurialGrounds-Windows.zip`
+
+These files are built from the current Darkan-based Burial Grounds client line.
