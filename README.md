@@ -1,8 +1,5 @@
 # Burial Grounds — Downloads
 
-Choose your platform:
+Public client downloads are temporarily unavailable while the current Darkan-based Android and desktop clients are being finalized and verified.
 
-- **Android** — open the `Android` folder and install `BurialGrounds-Android.apk`.
-- **Windows/Desktop** — open the `Desktop` folder, download `BurialGrounds-Windows.zip`, extract it, and run the included launcher.
-
-These are the public Burial Grounds game clients. You do not need the server source to play.
+Do not use any older Burial Grounds client builds. New downloads will be published here only after they are built from the current Darkan client source and pass install/login/runtime verification.
