@@ -1,9 +1,7 @@
 # Burial Grounds — Android
 
-Download **BurialGrounds-Android.apk** and install it on your Android device.
+The public Android APK is temporarily withheld while the current Darkan revision-727 client completes final runtime/device verification.
 
-Current public build: **v0.2.7**.
+The next Android release is the Darkan-based Burial Grounds client line beginning with **v0.2.8**. Older Android APKs are not supported and should not be used.
 
-This build uses the server-driven native quest guidance system. The old floating Android **Q** quest-helper overlay is not included.
-
-Mobile controls include one-finger camera movement, two-finger pinch-to-zoom, long-press haptic feedback, stable long-press/right-click menus, companion controls, and the current Android keyboard/login fixes. This build also establishes the verified in-app update channel for future releases.
+The release APK will be published here only after install, launch, live-server connection, rendering, login/input, audio, and update-channel checks pass.
