@@ -1,0 +1,42 @@
+name: Publish Android 0.2.16 Public
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/publish-android-0.2.16.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      ARTIFACT_URL: 'https://sdmntpreastus2.oaiusercontent.com/files/00000000-4f3c-81f6-ba53-ba12716b3384/raw?se=2026-09-30T11%3A55%3A11Z&sp=r&sv=2026-02-06&sr=b&scid=0875f2d4-8a74-5cf7-bc08-21ab93298945&skoid=dd316919-ffbf-4550-9c54-dfc99f412009&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-09-30T06%3A24%3A00Z&ske=2026-10-01T06%3A24%3A00Z&sks=b&skv=2026-02-06&sig=cr/U7EQfVEwUWP866ThQyqqoAEauPVuwrwPLR8WHuT4%3D'
+      TAG: android-v0.2.16-dev
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Download verified client artifact
+        run: |
+          set -euo pipefail
+          curl -fL "$ARTIFACT_URL" -o candidate.zip
+          mkdir candidate
+          unzip -q candidate.zip -d candidate
+          test -f candidate/BurialGrounds-Android-0.2.16-dev.apk
+          test -f candidate/BurialGrounds-Android-0.2.16-dev.apk.sha256
+          test -f candidate/manifest.candidate.json
+          cd candidate
+          sha256sum -c BurialGrounds-Android-0.2.16-dev.apk.sha256
+
+      - name: Publish direct APK release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          gh release view "$TAG" >/dev/null 2>&1 && gh release delete "$TAG" --yes --cleanup-tag || true
+          gh release create "$TAG"             --target "${{ github.sha }}"             --title "Burial Grounds Android 0.2.16-dev"             --notes "Current Android development candidate. Includes all prior mobile touch/menu/action-strip/UI-scale work and fixes the verified in-app updater channel for Burial Grounds Public-Client release APKs."             --prerelease             candidate/BurialGrounds-Android-0.2.16-dev.apk             candidate/BurialGrounds-Android-0.2.16-dev.apk.sha256             candidate/manifest.candidate.json
