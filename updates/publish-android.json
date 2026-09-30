@@ -1,0 +1,5 @@
+{
+  "version": "0.2.16",
+  "artifactUrl": "https://sdmntpreastus2.oaiusercontent.com/files/00000000-6e4c-81f6-bae1-d3e3a09423e7/raw?se=2026-09-30T15%3A15%3A25Z&sp=r&sv=2026-02-06&sr=b&scid=5167f1e2-7979-522c-b5cd-0449bc65b8fb&skoid=dd316919-ffbf-4550-9c54-dfc99f412009&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-09-30T12%3A51%3A28Z&ske=2026-10-01T12%3A51%3A28Z&sks=b&skv=2026-02-06&sig=TUcA1aoI2PDKHKVUAE3LMGhOflPr9Ns5B0HM0ZSfgsg%3D",
+  "notes": "Current Burial Grounds Android development candidate. Adds the triple-buffer latest-frame renderer mailbox: full software framebuffer copies occur outside the shared GL ownership lock, completed frames atomically replace stale pending frames, and render/input geometry follows the frame that actually becomes visible. Includes all prior touch, context-menu, action-strip and UI-scale improvements."
+}
