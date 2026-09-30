@@ -2,10 +2,12 @@
 
 ## Android
 
-- [Download Burial Grounds Android 0.2.15-dev APK](https://github.com/fooliosissir-cmd/Public-Client/releases/download/android-v0.2.15-dev/BurialGrounds-Android-0.2.15-dev.apk)
-- [Android 0.2.15-dev release notes, checksum, and manifest](https://github.com/fooliosissir-cmd/Public-Client/releases/tag/android-v0.2.15-dev)
+- [Download Burial Grounds Android 0.2.16-dev APK](https://github.com/fooliosissir-cmd/Public-Client/releases/download/android-v0.2.16-dev/BurialGrounds-Android-0.2.16-dev.apk)
+- [Android 0.2.16-dev release notes, checksum, and manifest](https://github.com/fooliosissir-cmd/Public-Client/releases/tag/android-v0.2.16-dev)
 
 This is the current Android **development candidate**, built from the customized Burial Grounds client source. It is a direct `.apk` download; Android players do not need to download a ZIP.
+
+Starting with **0.2.16-dev**, the Android app has a live verified update channel backed by this repository. Future published versions can be discovered in-app, downloaded over HTTPS, checked against the published size and SHA-256, and then handed to Android's installer for user confirmation.
 
 The old Android **0.2.11-dev** APK is withdrawn and should not be used.
 
