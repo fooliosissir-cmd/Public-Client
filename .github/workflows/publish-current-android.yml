@@ -1,0 +1,91 @@
+name: Publish Current Android Candidate
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "updates/publish-android.json"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Read publication request
+        run: |
+          set -euo pipefail
+          test -f updates/publish-android.json
+          VERSION="$(jq -r '.version' updates/publish-android.json)"
+          ARTIFACT_URL="$(jq -r '.artifactUrl' updates/publish-android.json)"
+          NOTES="$(jq -r '.notes // "Current Burial Grounds Android development candidate."' updates/publish-android.json)"
+          test -n "$VERSION"
+          test "$VERSION" != "null"
+          test -n "$ARTIFACT_URL"
+          test "$ARTIFACT_URL" != "null"
+          echo "VERSION=$VERSION" >> "$GITHUB_ENV"
+          echo "ARTIFACT_URL=$ARTIFACT_URL" >> "$GITHUB_ENV"
+          {
+            echo "RELEASE_NOTES<<BGEOF"
+            echo "$NOTES"
+            echo "BGEOF"
+          } >> "$GITHUB_ENV"
+
+      - name: Download and verify candidate
+        run: |
+          set -euo pipefail
+          curl -fL "$ARTIFACT_URL" -o candidate.zip
+          rm -rf candidate
+          mkdir candidate
+          unzip -q candidate.zip -d candidate
+
+          APK="candidate/BurialGrounds-Android-$VERSION-dev.apk"
+          SHA="$APK.sha256"
+          MANIFEST="candidate/manifest.candidate.json"
+
+          test -f "$APK"
+          test -f "$SHA"
+          test -f "$MANIFEST"
+
+          cd candidate
+          sha256sum -c "BurialGrounds-Android-$VERSION-dev.apk.sha256"
+
+      - name: Publish direct APK prerelease
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          TAG="android-v$VERSION-dev"
+          APK="candidate/BurialGrounds-Android-$VERSION-dev.apk"
+          SHA="$APK.sha256"
+          MANIFEST="candidate/manifest.candidate.json"
+
+          gh release view "$TAG" >/dev/null 2>&1 &&             gh release delete "$TAG" --yes --cleanup-tag || true
+
+          gh release create "$TAG"             --target "${{ github.sha }}"             --title "Burial Grounds Android $VERSION-dev"             --notes "$RELEASE_NOTES"             --prerelease             "$APK"             "$SHA"             "$MANIFEST"
+
+      - name: Publish updater manifest
+        run: |
+          set -euo pipefail
+          mkdir -p updates/android-native
+
+          CANDIDATE="candidate/manifest.candidate.json"
+          VERSION_CODE="$(jq -r '.versionCode' "$CANDIDATE")"
+          VERSION_NAME="$(jq -r '.versionName' "$CANDIDATE")"
+          APK_SHA="$(jq -r '.apkSha256' "$CANDIDATE")"
+          APK_SIZE="$(jq -r '.apkSize' "$CANDIDATE")"
+          APK_URL="https://github.com/fooliosissir-cmd/Public-Client/releases/download/android-v$VERSION-dev/BurialGrounds-Android-$VERSION-dev.apk"
+
+          jq -n             --argjson versionCode "$VERSION_CODE"             --arg versionName "$VERSION_NAME"             --arg apkUrl "$APK_URL"             --arg apkSha256 "$APK_SHA"             --argjson apkSize "$APK_SIZE"             '{versionCode:$versionCode,versionName:$versionName,apkUrl:$apkUrl,apkSha256:$apkSha256,apkSize:$apkSize}'             > updates/android-native/manifest.json
+
+          git config user.name "Burial Grounds Publisher"
+          git config user.email "actions@users.noreply.github.com"
+          git add updates/android-native/manifest.json
+          git diff --cached --quiet || git commit -m "Update Android updater manifest to $VERSION-dev"
+          git push origin HEAD:main
