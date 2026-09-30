@@ -1,12 +1,14 @@
 # Burial Grounds — Android
 
-The old public **0.2.11-dev** APK is withdrawn and should not be used. It was not built from the complete current Burial Grounds customized client source.
+## Current development APK
 
-## Current replacement candidate
+**0.2.14-dev**
 
-The current private development candidate is **0.2.14-dev**, built from the current Burial Grounds client source.
+[Download the direct APK](https://github.com/fooliosissir-cmd/Public-Client/releases/download/android-v0.2.14-dev/BurialGrounds-Android-0.2.14-dev.apk)
 
-It includes:
+[Release notes, SHA-256, and manifest](https://github.com/fooliosissir-cmd/Public-Client/releases/tag/android-v0.2.14-dev)
+
+This build is produced from the current customized Burial Grounds client source. It includes:
 
 - ordered native pointer down/move/up input;
 - long-press/right-click held correctly until finger release;
@@ -15,9 +17,9 @@ It includes:
 - atomic renderer/input viewport geometry;
 - normal-frame diagnostic scans disabled unless explicitly enabled;
 - bounded/coalesced Android motion input;
-- Android-only enlarged native context-menu row spacing and touch mapping;
+- enlarged Android-only native context-menu row spacing and touch mapping;
 - a collapsible Burial Grounds mobile action strip for Inventory, Equipment, Prayer, Magic, Skills, and Quests, routed through the native revision-727 tab script on the engine thread.
 
-The source preparation, Java compile, APK assembly, artifact upload, checksum generation, and GitHub prerelease publication all pass.
+The build pipeline, APK assembly, checksum generation, and GitHub publication passed. This remains a development candidate until real-device gameplay smoke testing is complete.
 
-The public APK remains withheld until this candidate is smoke-tested on a real device against the live Main World. Once it passes, the direct `.apk` here will be replaced with the verified current build.
+The old **0.2.11-dev** APK is withdrawn and should not be used.
