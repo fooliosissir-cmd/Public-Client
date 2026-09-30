@@ -5,15 +5,11 @@
 - [Download Burial Grounds Android 0.2.17-dev APK](https://github.com/fooliosissir-cmd/Public-Client/releases/download/android-v0.2.17-dev/BurialGrounds-Android-0.2.17-dev.apk)
 - [Android 0.2.17-dev release notes, checksum, and manifest](https://github.com/fooliosissir-cmd/Public-Client/releases/tag/android-v0.2.17-dev)
 
-This is the current Android **development candidate**, built from the customized Burial Grounds client source. It is a direct `.apk` download; Android players do not need to download a ZIP.
-
-Starting with **0.2.16-dev**, the Android app has a live verified update channel backed by this repository. Future published versions can be discovered in-app, downloaded over HTTPS, checked against the published size and SHA-256, and then handed to Android's installer for user confirmation.
-
-The old Android **0.2.11-dev** APK is withdrawn and should not be used.
+This is the current Android **development candidate**, built from the customized Burial Grounds client source. Android players download the direct ; no ZIP is required.
 
 ## Windows
 
-- [Windows 64-bit ZIP](https://github.com/fooliosissir-cmd/Public-Client/releases/download/preview-2026-09-29/BurialGrounds-Windows-preview-20260929.zip) — extract the entire ZIP and run `Play.vbs` or `Play.bat`. Java is included.
+- [Windows 64-bit ZIP](https://github.com/fooliosissir-cmd/Public-Client/releases/download/preview-2026-09-29/BurialGrounds-Windows-preview-20260929.zip) — extract the entire ZIP and run  or . Java is included.
 - [Windows release notes and checksums](https://github.com/fooliosissir-cmd/Public-Client/releases/tag/preview-2026-09-29)
 
 ## Account and world access
