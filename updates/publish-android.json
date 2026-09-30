@@ -1,5 +1,5 @@
 {
-  "version": "0.2.16",
-  "artifactUrl": "https://sdmntpreastus2.oaiusercontent.com/files/00000000-6e4c-81f6-bae1-d3e3a09423e7/raw?se=2026-09-30T15%3A15%3A25Z&sp=r&sv=2026-02-06&sr=b&scid=5167f1e2-7979-522c-b5cd-0449bc65b8fb&skoid=dd316919-ffbf-4550-9c54-dfc99f412009&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-09-30T12%3A51%3A28Z&ske=2026-10-01T12%3A51%3A28Z&sks=b&skv=2026-02-06&sig=TUcA1aoI2PDKHKVUAE3LMGhOflPr9Ns5B0HM0ZSfgsg%3D",
-  "notes": "Current Burial Grounds Android development candidate. Adds the triple-buffer latest-frame renderer mailbox: full software framebuffer copies occur outside the shared GL ownership lock, completed frames atomically replace stale pending frames, and render/input geometry follows the frame that actually becomes visible. Includes all prior touch, context-menu, action-strip and UI-scale improvements."
+  "version": "0.2.17",
+  "artifactUrl": "https://sdmntprnortheu.oaiusercontent.com/files/00000000-63dc-81f4-a592-4d45cfca35ba/raw?se=2026-09-30T15%3A23%3A36Z&sp=r&sv=2026-02-06&sr=b&scid=5d35c4ce-4f36-5ce6-aea6-95135380adaf&skoid=dd316919-ffbf-4550-9c54-dfc99f412009&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-09-30T12%3A29%3A27Z&ske=2026-10-01T12%3A29%3A27Z&sks=b&skv=2026-02-06&sig=X2HgK0WSe3FzvrhAu7B9k7mvkGbTM4PsAnX3sqN5uUY%3D",
+  "notes": "Current Burial Grounds Android development candidate. Combines the triple-buffer latest-frame mailbox, duplicate GPU upload skipping, optional copy/upload timing metrics, all prior touch/context-menu/action-strip/UI-scale improvements, and a hardened updater that accepts only the exact Burial Grounds Public-Client GitHub release path."
 }
