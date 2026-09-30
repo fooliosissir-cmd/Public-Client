@@ -44,15 +44,12 @@ jobs:
           rm -rf candidate
           mkdir candidate
           unzip -q candidate.zip -d candidate
-
           APK="candidate/BurialGrounds-Android-$VERSION-dev.apk"
           SHA="$APK.sha256"
           MANIFEST="candidate/manifest.candidate.json"
-
           test -f "$APK"
           test -f "$SHA"
           test -f "$MANIFEST"
-
           cd candidate
           sha256sum -c "BurialGrounds-Android-$VERSION-dev.apk.sha256"
 
@@ -65,27 +62,75 @@ jobs:
           APK="candidate/BurialGrounds-Android-$VERSION-dev.apk"
           SHA="$APK.sha256"
           MANIFEST="candidate/manifest.candidate.json"
+          gh release view "$TAG" >/dev/null 2>&1 && gh release delete "$TAG" --yes --cleanup-tag || true
+          gh release create "$TAG" \
+            --target "${{ github.sha }}" \
+            --title "Burial Grounds Android $VERSION-dev" \
+            --notes "$RELEASE_NOTES" \
+            --prerelease \
+            "$APK" "$SHA" "$MANIFEST"
 
-          gh release view "$TAG" >/dev/null 2>&1 &&             gh release delete "$TAG" --yes --cleanup-tag || true
-
-          gh release create "$TAG"             --target "${{ github.sha }}"             --title "Burial Grounds Android $VERSION-dev"             --notes "$RELEASE_NOTES"             --prerelease             "$APK"             "$SHA"             "$MANIFEST"
-
-      - name: Publish updater manifest
+      - name: Publish updater manifest and visible download links
         run: |
           set -euo pipefail
-          mkdir -p updates/android-native
-
+          mkdir -p updates/android-native Android
           CANDIDATE="candidate/manifest.candidate.json"
           VERSION_CODE="$(jq -r '.versionCode' "$CANDIDATE")"
           VERSION_NAME="$(jq -r '.versionName' "$CANDIDATE")"
           APK_SHA="$(jq -r '.apkSha256' "$CANDIDATE")"
           APK_SIZE="$(jq -r '.apkSize' "$CANDIDATE")"
           APK_URL="https://github.com/fooliosissir-cmd/Public-Client/releases/download/android-v$VERSION-dev/BurialGrounds-Android-$VERSION-dev.apk"
+          RELEASE_URL="https://github.com/fooliosissir-cmd/Public-Client/releases/tag/android-v$VERSION-dev"
 
-          jq -n             --argjson versionCode "$VERSION_CODE"             --arg versionName "$VERSION_NAME"             --arg apkUrl "$APK_URL"             --arg apkSha256 "$APK_SHA"             --argjson apkSize "$APK_SIZE"             '{versionCode:$versionCode,versionName:$versionName,apkUrl:$apkUrl,apkSha256:$apkSha256,apkSize:$apkSize}'             > updates/android-native/manifest.json
+          jq -n \
+            --argjson versionCode "$VERSION_CODE" \
+            --arg versionName "$VERSION_NAME" \
+            --arg apkUrl "$APK_URL" \
+            --arg apkSha256 "$APK_SHA" \
+            --argjson apkSize "$APK_SIZE" \
+            '{versionCode:$versionCode,versionName:$versionName,apkUrl:$apkUrl,apkSha256:$apkSha256,apkSize:$apkSize}' \
+            > updates/android-native/manifest.json
+
+          cat > README.md <<EOF
+# Burial Grounds - Downloads
+
+## Android
+
+- [Download Burial Grounds Android $VERSION-dev APK]($APK_URL)
+- [Android $VERSION-dev release notes, checksum, and manifest]($RELEASE_URL)
+
+This is the current Android **development candidate**, built from the customized Burial Grounds client source. Android players download the direct `.apk`; no ZIP is required.
+
+## Windows
+
+- [Windows 64-bit ZIP](https://github.com/fooliosissir-cmd/Public-Client/releases/download/preview-2026-09-29/BurialGrounds-Windows-preview-20260929.zip) — extract the entire ZIP and run `Play.vbs` or `Play.bat`. Java is included.
+- [Windows release notes and checksums](https://github.com/fooliosissir-cmd/Public-Client/releases/tag/preview-2026-09-29)
+
+## Account and world access
+
+New players can choose **Create Account** on the login screen, complete registration, then log in with their email and password. First login includes choosing and confirming a character name. Existing accounts can sign in normally. Select **Main World** for the public server; Developer World requires local server services.
+
+This is an early development preview. Greyhaven buildings and activities are unfinished.
+EOF
+
+          cat > Android/README.md <<EOF
+# Burial Grounds — Android
+
+## Current development APK
+
+**$VERSION-dev**
+
+[Download the direct APK]($APK_URL)
+
+[Release notes, SHA-256, and manifest]($RELEASE_URL)
+
+This APK is produced from the current customized Burial Grounds client source. Its source preparation, compile, APK assembly, checksum verification, and GitHub publication passed.
+
+It remains a development candidate until real-device gameplay smoke testing is complete.
+EOF
 
           git config user.name "Burial Grounds Publisher"
           git config user.email "actions@users.noreply.github.com"
-          git add updates/android-native/manifest.json
-          git diff --cached --quiet || git commit -m "Update Android updater manifest to $VERSION-dev"
+          git add updates/android-native/manifest.json README.md Android/README.md
+          git diff --cached --quiet || git commit -m "Publish Android $VERSION-dev download pointers"
           git push origin HEAD:main
