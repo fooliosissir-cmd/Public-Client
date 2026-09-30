@@ -1,7 +1,22 @@
 # Burial Grounds — Android
 
-The Android download is temporarily withdrawn.
+The old public **0.2.11-dev** APK is withdrawn and should not be used. It was not built from the complete current Burial Grounds customized client source.
 
-The last APK was built from the clean Darkan revision-727 baseline plus Android port overrides rather than the complete current Burial Grounds customized client source. It is not considered a valid public Burial Grounds release.
+## Current replacement candidate
 
-The replacement APK will be published here as a direct `.apk` file after the customized client and live Burial Grounds world are verified together.
+The current private development candidate is **0.2.13-dev**, built from the current Burial Grounds client source.
+
+It includes:
+
+- ordered native pointer down/move/up input;
+- long-press/right-click held correctly until finger release;
+- native context-menu hover and row selection tracking;
+- camera/menu gesture arbitration;
+- atomic renderer/input viewport geometry;
+- normal-frame diagnostic scans disabled unless explicitly enabled;
+- bounded/coalesced Android motion input;
+- Android-only enlarged native context-menu row spacing and touch mapping.
+
+The source preparation, Java compile, APK assembly, artifact upload, checksum generation, and GitHub prerelease publication all pass.
+
+The public APK remains withheld until this candidate is smoke-tested on a real device against the live Main World. Once it passes, the direct `.apk` here will be replaced with the verified current build.
