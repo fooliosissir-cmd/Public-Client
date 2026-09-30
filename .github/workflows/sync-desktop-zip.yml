@@ -43,4 +43,6 @@ jobs:
             exit 0
           }
           git commit -m "Publish Windows desktop ZIP [skip ci]"
-          git push
+          git fetch origin main
+          git rebase origin/main
+          git push origin HEAD:main
