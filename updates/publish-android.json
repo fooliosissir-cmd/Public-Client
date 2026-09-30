@@ -1,5 +1,5 @@
 {
-  "version": "0.2.17",
-  "artifactUrl": "https://sdmntprnortheu.oaiusercontent.com/files/00000000-63dc-81f4-a592-4d45cfca35ba/raw?se=2026-09-30T15%3A23%3A36Z&sp=r&sv=2026-02-06&sr=b&scid=5d35c4ce-4f36-5ce6-aea6-95135380adaf&skoid=dd316919-ffbf-4550-9c54-dfc99f412009&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-09-30T12%3A29%3A27Z&ske=2026-10-01T12%3A29%3A27Z&sks=b&skv=2026-02-06&sig=X2HgK0WSe3FzvrhAu7B9k7mvkGbTM4PsAnX3sqN5uUY%3D",
-  "notes": "Current Burial Grounds Android development candidate. Combines the triple-buffer latest-frame mailbox, duplicate GPU upload skipping, optional copy/upload timing metrics, all prior touch/context-menu/action-strip/UI-scale improvements, and a hardened updater that accepts only the exact Burial Grounds Public-Client GitHub release path."
+  "version": "0.2.18",
+  "artifactUrl": "https://sdmntprcentralus.oaiusercontent.com/files/00000000-438c-81f5-8677-cdf975c5041c/raw?se=2026-09-30T15%3A51%3A06Z&sp=r&sv=2026-02-06&sr=b&scid=9d326fea-91d3-566c-90f5-2a23716b01b2&skoid=3c9b86d7-60cb-496a-a3c1-90c5457c8da4&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-09-30T09%3A20%3A52Z&ske=2026-10-01T09%3A20%3A52Z&sks=b&skv=2026-02-06&sig=092Fz2oQL8C39E8FOH%2BLo4UmnyfNFQtwyhAo1BI7KU8%3D",
+  "notes": "Current Burial Grounds Android development candidate. Restores the camera zoom control as part of the Burial Grounds mobile side UI: plus/minus controls and a draggable vertical zoom bar synchronized with the native camera zoom and pinch zoom. Zoom requests are queued and applied on the engine thread. Includes all prior touch, context-menu, action-strip, UI-scale, renderer-mailbox, duplicate-upload, and updater improvements."
 }
