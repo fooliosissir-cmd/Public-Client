@@ -1,0 +1,46 @@
+name: Sync Desktop ZIP into repository
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/sync-desktop-zip.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Download verified Windows release ZIP
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = 'Stop'
+          $url = 'https://github.com/fooliosissir-cmd/Public-Client/releases/download/preview-2026-09-29/BurialGrounds-Windows-preview-20260929.zip'
+          $dest = 'Desktop/BurialGrounds-Windows.zip'
+          $expected = 'ea2fad7e5d3926a2406772ebd3162e9644fa2f6e552d2d17fe5710a8f71c3c29'
+          New-Item -ItemType Directory -Force -Path 'Desktop' | Out-Null
+          Invoke-WebRequest -Uri $url -OutFile $dest
+          $actual = (Get-FileHash -Algorithm SHA256 -LiteralPath $dest).Hash.ToLowerInvariant()
+          if ($actual -ne $expected) {
+            throw "SHA-256 mismatch. Expected $expected but got $actual"
+          }
+          "$actual  BurialGrounds-Windows.zip" | Set-Content -LiteralPath 'Desktop/BurialGrounds-Windows.zip.sha256' -Encoding ascii
+
+      - name: Commit desktop ZIP
+        shell: pwsh
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- 'Desktop/BurialGrounds-Windows.zip' 'Desktop/BurialGrounds-Windows.zip.sha256'
+          git diff --cached --quiet
+          if ($LASTEXITCODE -eq 0) {
+            Write-Host 'Desktop ZIP already matches the public release.'
+            exit 0
+          }
+          git commit -m "Publish Windows desktop ZIP [skip ci]"
+          git push
