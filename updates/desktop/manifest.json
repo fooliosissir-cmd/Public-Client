@@ -1,5 +1,5 @@
 {
-  "jarUrl": "https://github.com/fooliosissir-cmd/BurialGrounds-Client/releases/download/desktop-dev-latest/BurialGrounds-Client-latest.jar",
-  "jarSha256": "",
-  "sourceCommit": ""
+  "jarUrl": "https://github.com/fooliosissir-cmd/Public-Client/releases/download/live-sync-2026-10-01/BurialGrounds-Client.jar",
+  "jarSha256": "cd0abd61555ae331358e7a63ae66f1161c559d26d906cc8f155452717e184ef3",
+  "sourceCommit": "1b84c80204431425ef6eea24b7cedc07a2804925"
 }
