@@ -1,13 +1,13 @@
-# Burial Grounds — Android
+# Burial Grounds - Android
 
 ## Current development APK
 
-**0.2.28-dev**
+**0.2.30-mobile-ui-dev** (version code 30)
 
-[Download the direct APK](https://github.com/fooliosissir-cmd/Public-Client/releases/download/android-v0.2.28-dev/BurialGrounds-Android-0.2.28-dev.apk)
+[Download the direct APK](https://github.com/fooliosissir-cmd/Public-Client/releases/download/android-v0.2.30-mobile-ui-dev/BurialGrounds-Android-0.2.30-mobile-ui-dev.apk)
 
-[Release notes, SHA-256, and manifest](https://github.com/fooliosissir-cmd/Public-Client/releases/tag/android-v0.2.28-dev)
+[Release notes, SHA-256, and manifest](https://github.com/fooliosissir-cmd/Public-Client/releases/tag/android-v0.2.30-mobile-ui-dev)
 
-This APK is produced from the current customized Burial Grounds client source. Its source preparation, compile, APK assembly, checksum verification, and GitHub publication passed.
+This is the exact APK installed and checksum-verified on the connected test phone. Source revision: `a0489aa73e9b6a1ba7a4847a49a8e8f50430fde0`.
 
-It remains a development candidate until real-device gameplay smoke testing is complete.
+Local builds and regression checks passed. GitHub desktop packaging and Android build/native UI checks passed. Emulator QA and final in-game testing of this newest phone build remain pending at publication; see the source workflow for current status.
