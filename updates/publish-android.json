@@ -1,5 +1,5 @@
 {
-  "version": "0.2.26",
-  "artifactUrl": "https://sdmntpreastus2.oaiusercontent.com/files/00000000-5cbc-81f6-8b02-d4aae19b9c5c/raw?se=2026-10-01T12%3A04%3A19Z&sp=r&sv=2026-02-06&sr=b&scid=bc42d0ba-138a-55e7-8ed5-151d4882213d&skoid=dd316919-ffbf-4550-9c54-dfc99f412009&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-10-01T10%3A32%3A32Z&ske=2026-10-02T10%3A32%3A32Z&sks=b&skv=2026-02-06&sig=cQKuGYzfIeLoeL9ugEP2M0hzFK%2BOa9SqEpVJ3dJ4ZUc%3D",
-  "notes": "Burial Grounds Android 0.2.26-dev. Isolated quest-helper build: restores automatic selection of the quest opened in the native quest journal so server-provided NPC/object/tile guidance and the native minimap/world arrow can activate. Keeps the 0.2.25 known-good mobile layout and touch behavior unchanged."
+  "version": "0.2.28",
+  "artifactUrl": "https://sdmntpreastus2.oaiusercontent.com/files/00000000-807c-81f6-ac39-36ad0e0e716c/raw?se=2026-10-01T13%3A26%3A19Z&sp=r&sv=2026-02-06&sr=b&scid=4c9d209a-085e-59db-9921-afcee7753ec2&skoid=dd316919-ffbf-4550-9c54-dfc99f412009&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-10-01T12%3A18%3A27Z&ske=2026-10-02T12%3A18%3A27Z&sks=b&skv=2026-02-06&sig=rj0LhnTdpDi/nHbFf8ahztF655JhqmoieREObvtEg2I%3D",
+  "notes": "Burial Grounds Android 0.2.28-dev. Adds a debug-only Android emulator QA harness that can auto-login to an isolated Developer World account, select Cook's Assistant, observe decoded native HINT_ARROW state, exercise independent tile/NPC hint tests, and confirm the stock minimap render path. Normal player login/UI behavior is unchanged."
 }
