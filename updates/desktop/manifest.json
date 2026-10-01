@@ -1,5 +1,5 @@
 {
-  "jarUrl": "https://github.com/fooliosissir-cmd/Public-Client/releases/download/live-sync-2026-10-01/BurialGrounds-Client.jar",
-  "jarSha256": "cd0abd61555ae331358e7a63ae66f1161c559d26d906cc8f155452717e184ef3",
-  "sourceCommit": "1b84c80204431425ef6eea24b7cedc07a2804925"
+  "jarUrl": "https://github.com/fooliosissir-cmd/Public-Client/releases/download/world-select-fix-2026-10-01/BurialGrounds-Client.jar",
+  "jarSha256": "3dbec17b0dc292d4e2b6065eae7ae8e697071e4503adcbda9450b71c7076cf29",
+  "sourceCommit": "2d91b35d2e58dc4dc205fe2fdf4af46e7ff7dd7e"
 }
