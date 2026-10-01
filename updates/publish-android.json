@@ -1,5 +1,5 @@
 {
-  "version": "0.2.21",
-  "artifactUrl": "https://sdmntpreastus2.oaiusercontent.com/files/00000000-d720-81f6-addc-09077d54905f/raw?se=2026-10-01T10%3A09%3A46Z&sp=r&sv=2026-02-06&sr=b&scid=a162fe46-f2b1-5346-879b-7dda8b411827&skoid=dd316919-ffbf-4550-9c54-dfc99f412009&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-10-01T09%3A40%3A11Z&ske=2026-10-02T09%3A40%3A11Z&sks=b&skv=2026-02-06&sig=9egUH28W87ZIIcA4e/GScA15swUmZq0IGsywJ6%2BHT5Y%3D",
-  "notes": "Burial Grounds Android 0.2.21-dev. Keeps the existing native quest journal as the helper UI (no extra collapsible overlay), removes the legacy floating Q, includes the server-driven quest-helper arrow/minimap guidance and native left/right mobile gameframe layout, and is paired with the synchronized live cache/Home Travel Directory fix. Quest-helper-enabled quests are being gated to provide a navigable start target before they begin."
+  "version": "0.2.22",
+  "artifactUrl": "https://sdmntpreastus2.oaiusercontent.com/files/00000000-0aa0-81f6-bf56-f0be3f202fcd/raw?se=2026-10-01T11%3A10%3A29Z&sp=r&sv=2026-02-06&sr=b&scid=ab7f6129-7a10-51e7-a617-6a3aa688915b&skoid=dd316919-ffbf-4550-9c54-dfc99f412009&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-10-01T10%3A04%3A56Z&ske=2026-10-02T10%3A04%3A56Z&sks=b&skv=2026-02-06&sig=EB6c5USLPKe6KbH1t0vnZj/%2Bs7wBzKfgfixSIQFAXK0%3D",
+  "notes": "Burial Grounds Android 0.2.22-dev. Corrects the native mobile gameframe so complete tab groups move to the screen sides, keeps long-range quest direction guidance visible, removes the legacy floating Q, and pairs with the live server quest-start target fixes including Cook's Assistant."
 }
