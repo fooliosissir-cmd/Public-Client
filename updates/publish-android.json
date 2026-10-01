@@ -1,5 +1,5 @@
 {
-  "version": "0.2.18",
-  "artifactUrl": "https://sdmntprcentralus.oaiusercontent.com/files/00000000-438c-81f5-8677-cdf975c5041c/raw?se=2026-09-30T15%3A51%3A06Z&sp=r&sv=2026-02-06&sr=b&scid=9d326fea-91d3-566c-90f5-2a23716b01b2&skoid=3c9b86d7-60cb-496a-a3c1-90c5457c8da4&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-09-30T09%3A20%3A52Z&ske=2026-10-01T09%3A20%3A52Z&sks=b&skv=2026-02-06&sig=092Fz2oQL8C39E8FOH%2BLo4UmnyfNFQtwyhAo1BI7KU8%3D",
-  "notes": "Current Burial Grounds Android development candidate. Restores the camera zoom control as part of the Burial Grounds mobile side UI: plus/minus controls and a draggable vertical zoom bar synchronized with the native camera zoom and pinch zoom. Zoom requests are queued and applied on the engine thread. Includes all prior touch, context-menu, action-strip, UI-scale, renderer-mailbox, duplicate-upload, and updater improvements."
+  "version": "0.2.20",
+  "artifactUrl": "https://sdmntpreastus2.oaiusercontent.com/files/00000000-b958-81f6-9039-9c6cb7bac151/raw?se=2026-10-01T08%3A42%3A39Z&sp=r&sv=2026-02-06&sr=b&scid=6efe1fcf-ac24-5ed9-ade6-15a1b664b3b5&skoid=dd316919-ffbf-4550-9c54-dfc99f412009&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-10-01T08%3A36%3A46Z&ske=2026-10-02T08%3A36%3A46Z&sks=b&skv=2026-02-06&sig=HRQvHXeNqohVvGtk5yHQeKwyH2f/MJqLNFkLOufZpgQ%3D",
+  "notes": "Burial Grounds Android 0.2.20-dev. Adds the native server-driven quest helper with world/minimap arrows and quest target highlighting, removes the legacy floating Android Q overlay, and preserves the current custom mobile/gameframe controls. Works with the live custom Home Teleport travel directory."
 }
