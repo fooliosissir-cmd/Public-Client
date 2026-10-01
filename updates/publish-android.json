@@ -1,5 +1,5 @@
 {
-  "version": "0.2.22",
-  "artifactUrl": "https://sdmntpreastus2.oaiusercontent.com/files/00000000-0aa0-81f6-bf56-f0be3f202fcd/raw?se=2026-10-01T11%3A10%3A29Z&sp=r&sv=2026-02-06&sr=b&scid=ab7f6129-7a10-51e7-a617-6a3aa688915b&skoid=dd316919-ffbf-4550-9c54-dfc99f412009&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-10-01T10%3A04%3A56Z&ske=2026-10-02T10%3A04%3A56Z&sks=b&skv=2026-02-06&sig=EB6c5USLPKe6KbH1t0vnZj/%2Bs7wBzKfgfixSIQFAXK0%3D",
-  "notes": "Burial Grounds Android 0.2.22-dev. Corrects the native mobile gameframe so complete tab groups move to the screen sides, keeps long-range quest direction guidance visible, removes the legacy floating Q, and pairs with the live server quest-start target fixes including Cook's Assistant."
+  "version": "0.2.23",
+  "artifactUrl": "https://sdmntpreastus2.oaiusercontent.com/files/00000000-5f64-81f6-80ea-a32e0c05c8e6/raw?se=2026-10-01T11%3A32%3A48Z&sp=r&sv=2026-02-06&sr=b&scid=eaef3757-fab5-5096-9295-0b8fde50973d&skoid=dd316919-ffbf-4550-9c54-dfc99f412009&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-10-01T11%3A17%3A10Z&ske=2026-10-02T11%3A17%3A10Z&sks=b&skv=2026-02-06&sig=4F13qplibsrGm5ljxhRhhO8zreIOTfejNim5rp0Ptck%3D",
+  "notes": "Burial Grounds Android 0.2.23-dev. Fixes the mobile gameframe reflow so side tabs persist after native UI layout, moves the chat area away from the phone edge, makes logout easier to access, updates touch-safe UI regions, and restores automatic quest-helper selection from the native quest journal so Cook's Assistant guidance can activate when opened."
 }
