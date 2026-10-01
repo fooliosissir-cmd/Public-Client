@@ -1,7 +1,7 @@
 {
-  "versionCode": 21,
-  "versionName": "0.2.20-dev",
-  "apkUrl": "https://github.com/fooliosissir-cmd/Public-Client/releases/download/android-v0.2.20-dev/BurialGrounds-Android-0.2.20-dev.apk",
-  "apkSha256": "b7f20c5ec92db859b29375bfa565cec872fdad9989ffc916c2e641a386d97170",
-  "apkSize": 11101262
+  "versionCode": 22,
+  "versionName": "0.2.21-dev",
+  "apkUrl": "https://github.com/fooliosissir-cmd/Public-Client/releases/download/android-v0.2.21-dev/BurialGrounds-Android-0.2.21-dev.apk",
+  "apkSha256": "11df1c55a272b1b5112006ac213fcb2db40a62d1e57fbb87f9956f8c6779aa64",
+  "apkSize": 11101258
 }
