@@ -1,5 +1,5 @@
 {
-  "version": "0.2.24",
-  "artifactUrl": "https://sdmntpreastus2.oaiusercontent.com/files/00000000-e554-81f6-97e5-341645bee895/raw?se=2026-10-01T11%3A46%3A27Z&sp=r&sv=2026-02-06&sr=b&scid=2b36b4e0-3e74-54e2-bac6-f8cf50f552e5&skoid=dd316919-ffbf-4550-9c54-dfc99f412009&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-10-01T10%3A32%3A10Z&ske=2026-10-02T10%3A32%3A10Z&sks=b&skv=2026-02-06&sig=Hspy4TcO9KwMWb452gAD05JGQtsY%2Bp1V9I9FwvNKh3A%3D",
-  "notes": "Burial Grounds Android 0.2.24-dev. Fixes the 0.2.23 post-login loading regression by preventing the mobile gameframe reflow from running until the client reaches the final LOGGED_INGAME state. Keeps the side-tab, chat, logout, touch-safe layout changes and native quest-journal helper auto-selection."
+  "version": "0.2.25",
+  "artifactUrl": "https://sdmntpreastus2.oaiusercontent.com/files/00000000-fe90-81f6-9343-34aae0ba513e/raw?se=2026-10-01T11%3A54%3A18Z&sp=r&sv=2026-02-06&sr=b&scid=e5865823-2d6e-56eb-a80e-7e619b3bdb2a&skoid=dd316919-ffbf-4550-9c54-dfc99f412009&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-10-01T10%3A31%3A49Z&ske=2026-10-02T10%3A31%3A49Z&sks=b&skv=2026-02-06&sig=2r9GqnDQEX33lkVRZde3u8VsocM1/G4UMFnGpVIHIdM%3D",
+  "notes": "Burial Grounds Android 0.2.25-dev. Recovery build based on the last known-good 0.2.22 Android world-entry behavior. Temporarily backs out the newer mobile gameframe, chat/logout touch-routing, and quest-journal auto-selection changes so post-login world entry can be verified cleanly before those fixes are reintroduced one at a time."
 }
