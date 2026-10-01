@@ -1,7 +1,7 @@
 {
-  "versionCode": 23,
-  "versionName": "0.2.22-dev",
-  "apkUrl": "https://github.com/fooliosissir-cmd/Public-Client/releases/download/android-v0.2.22-dev/BurialGrounds-Android-0.2.22-dev.apk",
-  "apkSha256": "f3b9b51018906a5d6d239c6d1887c98aa878f6897ee523392198eb79af5b0601",
-  "apkSize": 11101418
+  "versionCode": 24,
+  "versionName": "0.2.23-dev",
+  "apkUrl": "https://github.com/fooliosissir-cmd/Public-Client/releases/download/android-v0.2.23-dev/BurialGrounds-Android-0.2.23-dev.apk",
+  "apkSha256": "c5f8364d546931c1e1713ef248c36ec00bc29c7a3cf78bf956e96a2e47516092",
+  "apkSize": 11102346
 }
