@@ -10,7 +10,7 @@ This is the current Android **development candidate**, built from the customized
 ## Windows
 
 - [Windows 64-bit ZIP](https://github.com/fooliosissir-cmd/Public-Client/releases/download/desktop-teleport-quickdrop-2026-10-01/BurialGrounds-Windows-teleport-quickdrop-a0489aa7.zip) — extract the entire ZIP and run  or . Java is included.
-- [Windows release notes and checksums](https://github.com/fooliosissir-cmd/Public-Client/releases/tag/untagged-0c4288534ee47aad7d29)
+- [Windows release notes and checksums](https://github.com/fooliosissir-cmd/Public-Client/releases/tag/desktop-teleport-quickdrop-2026-10-01)
 
 ## Account and world access
 
