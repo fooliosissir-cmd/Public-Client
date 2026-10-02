@@ -1,5 +1,5 @@
 {
-  "jarUrl": "https://github.com/fooliosissir-cmd/Public-Client/releases/download/world-select-fix-2026-10-01/BurialGrounds-Client.jar",
-  "jarSha256": "3dbec17b0dc292d4e2b6065eae7ae8e697071e4503adcbda9450b71c7076cf29",
-  "sourceCommit": "2d91b35d2e58dc4dc205fe2fdf4af46e7ff7dd7e"
+  "jarUrl": "https://github.com/fooliosissir-cmd/Public-Client/releases/download/desktop-teleport-quickdrop-2026-10-01/BurialGrounds-Client-a0489aa7.jar",
+  "jarSha256": "603417ed4911bf274c5b68ab6609217852aa5a6f73540ee881ffdd4455ab14ee",
+  "sourceCommit": "a0489aa73e9b6a1ba7a4847a49a8e8f50430fde0"
 }
