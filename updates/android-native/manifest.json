@@ -1,7 +1,7 @@
 {
-  "versionCode": 33,
-  "versionName": "0.2.33-drag-graphics-review-dev",
-  "apkUrl": "https://github.com/fooliosissir-cmd/Public-Client/releases/download/android-v0.2.33-drag-graphics-review-dev/BurialGrounds-Android-0.2.33-drag-graphics-review-dev.apk",
-  "apkSha256": "83f0a9bd09d302e3d79e86884066765bb21cf66fe05096064b67ea5dea75c0b1",
-  "apkSize": 11187044
+  "versionCode": 35,
+  "versionName": "0.2.35-drag-ordering-review-dev",
+  "apkUrl": "https://github.com/fooliosissir-cmd/Public-Client/releases/download/android-v0.2.35-drag-ordering-review-dev/BurialGrounds-Android-0.2.35-drag-ordering-review-dev.apk",
+  "apkSha256": "7db97d733cd52c5891596fca991e4a1dfedd92e9e4d392a38e5de8f0f6288b56",
+  "apkSize": 11146051
 }
