@@ -1,7 +1,7 @@
 {
-  "versionCode": 32,
-  "versionName": "0.2.32-input-review-dev",
-  "apkUrl": "https://github.com/fooliosissir-cmd/Public-Client/releases/download/android-v0.2.32-input-review-dev/BurialGrounds-Android-0.2.32-input-review-dev.apk",
-  "apkSha256": "7284b567aec00ef55d3da649c91831778ef50c61eec59c6901fd10fcd4500fa4",
-  "apkSize": 11145371
+  "versionCode": 33,
+  "versionName": "0.2.33-drag-graphics-review-dev",
+  "apkUrl": "https://github.com/fooliosissir-cmd/Public-Client/releases/download/android-v0.2.33-drag-graphics-review-dev/BurialGrounds-Android-0.2.33-drag-graphics-review-dev.apk",
+  "apkSha256": "83f0a9bd09d302e3d79e86884066765bb21cf66fe05096064b67ea5dea75c0b1",
+  "apkSize": 11187044
 }
