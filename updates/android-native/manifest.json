@@ -1,7 +1,7 @@
 {
-  "versionCode": 36,
-  "versionName": "0.2.36-ge-keyboard-review-dev",
-  "apkUrl": "https://github.com/fooliosissir-cmd/Public-Client/releases/download/android-v0.2.36-ge-keyboard-review-dev/BurialGrounds-Android-0.2.36-ge-keyboard-review-dev.apk",
-  "apkSha256": "46f5e6262820ae1b103b396e53b155d86930d64eaa3d2216d3e4a450970d5dcd",
-  "apkSize": 11147295
+  "versionCode": 39,
+  "versionName": "0.2.39-ui-edit-review-dev",
+  "apkUrl": "https://github.com/fooliosissir-cmd/Public-Client/releases/download/android-v0.2.39-ui-edit-review-dev/BurialGrounds-Android-v39-UI-EDIT-review.apk",
+  "apkSha256": "e80de6e680960ffde8e0a5efbf38f21560232772689c7194b2cca6db4efd5a83",
+  "apkSize": 12555873
 }
