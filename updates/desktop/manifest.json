@@ -1,5 +1,5 @@
 {
-  "jarUrl": "https://github.com/fooliosissir-cmd/Public-Client/releases/download/desktop-fkeys-home-cw-2026-10-07/BurialGrounds-Client-99b99a0a.jar",
-  "jarSha256": "bf5ab31d181d5d71d48be21f41fc92fa06947ed2e15a94781235209dd54a3356",
-  "sourceCommit": "99b99a0adb16934df6e73f808282c442deaf12d6"
+  "jarUrl": "https://github.com/fooliosissir-cmd/Public-Client/releases/download/desktop-shenron-paired-2026-10-07/BurialGrounds-Client-Shenron-10cfdbed.jar",
+  "jarSha256": "595ea0ca3c489ca86b208d84444caafdec6557ac0efa8d0e3240ba521d8c43ad",
+  "sourceCommit": "10cfdbed294f35739e45bd66ffd51c451795c176"
 }
