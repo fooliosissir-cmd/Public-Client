@@ -1,7 +1,7 @@
 {
-  "versionCode": 31,
-  "versionName": "0.2.31-home-shortcut-dev",
-  "apkUrl": "https://github.com/fooliosissir-cmd/Public-Client/releases/download/android-v0.2.31-home-shortcut-dev/BurialGrounds-Android-0.2.31-home-shortcut-dev.apk",
-  "apkSha256": "b8230b0f117a793922f4d6752338e2ff4a8b5fce39e5c904db46cf431c4883f3",
-  "apkSize": 11185036
+  "versionCode": 32,
+  "versionName": "0.2.32-input-review-dev",
+  "apkUrl": "https://github.com/fooliosissir-cmd/Public-Client/releases/download/android-v0.2.32-input-review-dev/BurialGrounds-Android-0.2.32-input-review-dev.apk",
+  "apkSha256": "7284b567aec00ef55d3da649c91831778ef50c61eec59c6901fd10fcd4500fa4",
+  "apkSize": 11145371
 }
