@@ -16,13 +16,13 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Download verified Windows release ZIP
+      - name: Download managed Windows launcher package
         shell: pwsh
         run: |
           $ErrorActionPreference = 'Stop'
-          $url = 'https://github.com/fooliosissir-cmd/Public-Client/releases/download/preview-2026-09-29/BurialGrounds-Windows-preview-20260929.zip'
+          $url = 'https://github.com/fooliosissir-cmd/Public-Client/releases/download/desktop-fkeys-home-cw-2026-10-07/BurialGrounds-Desktop-EXE-Build7.zip'
           $dest = 'Desktop/BurialGrounds-Windows.zip'
-          $expected = 'ea2fad7e5d3926a2406772ebd3162e9644fa2f6e552d2d17fe5710a8f71c3c29'
+          $expected = 'cccdb2d087cf8a5eda89d20ffca13df86e29dc7abca5a573f526a49e3d90f4aa'
           New-Item -ItemType Directory -Force -Path 'Desktop' | Out-Null
           Invoke-WebRequest -Uri $url -OutFile $dest
           $actual = (Get-FileHash -Algorithm SHA256 -LiteralPath $dest).Hash.ToLowerInvariant()
@@ -31,7 +31,7 @@ jobs:
           }
           "$actual  BurialGrounds-Windows.zip" | Set-Content -LiteralPath 'Desktop/BurialGrounds-Windows.zip.sha256' -Encoding ascii
 
-      - name: Commit desktop ZIP
+      - name: Commit managed desktop package
         shell: pwsh
         run: |
           git config user.name "github-actions[bot]"
@@ -39,10 +39,10 @@ jobs:
           git add -- 'Desktop/BurialGrounds-Windows.zip' 'Desktop/BurialGrounds-Windows.zip.sha256'
           git diff --cached --quiet
           if ($LASTEXITCODE -eq 0) {
-            Write-Host 'Desktop ZIP already matches the public release.'
+            Write-Host 'Desktop ZIP already matches the managed launcher release.'
             exit 0
           }
-          git commit -m "Publish Windows desktop ZIP [skip ci]"
+          git commit -m "Publish managed Windows launcher package [skip ci]"
           git fetch origin main
           git rebase origin/main
           git push origin HEAD:main
