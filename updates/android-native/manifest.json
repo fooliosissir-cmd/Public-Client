@@ -1,7 +1,7 @@
 {
-  "versionCode": 35,
-  "versionName": "0.2.35-drag-ordering-review-dev",
-  "apkUrl": "https://github.com/fooliosissir-cmd/Public-Client/releases/download/android-v0.2.35-drag-ordering-review-dev/BurialGrounds-Android-0.2.35-drag-ordering-review-dev.apk",
-  "apkSha256": "7db97d733cd52c5891596fca991e4a1dfedd92e9e4d392a38e5de8f0f6288b56",
-  "apkSize": 11146051
+  "versionCode": 36,
+  "versionName": "0.2.36-ge-keyboard-review-dev",
+  "apkUrl": "https://github.com/fooliosissir-cmd/Public-Client/releases/download/android-v0.2.36-ge-keyboard-review-dev/BurialGrounds-Android-0.2.36-ge-keyboard-review-dev.apk",
+  "apkSha256": "46f5e6262820ae1b103b396e53b155d86930d64eaa3d2216d3e4a450970d5dcd",
+  "apkSize": 11147295
 }
