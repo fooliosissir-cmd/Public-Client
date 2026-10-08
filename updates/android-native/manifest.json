@@ -1,7 +1,7 @@
 {
-  "versionCode": 39,
-  "versionName": "0.2.39-ui-edit-review-dev",
-  "apkUrl": "https://github.com/fooliosissir-cmd/Public-Client/releases/download/android-v0.2.39-ui-edit-review-dev/BurialGrounds-Android-v39-UI-EDIT-review.apk",
-  "apkSha256": "e80de6e680960ffde8e0a5efbf38f21560232772689c7194b2cca6db4efd5a83",
-  "apkSize": 12555873
+  "versionCode": 44,
+  "versionName": "0.2.44-console-review-dev",
+  "apkUrl": "https://github.com/fooliosissir-cmd/Public-Client/releases/download/android-v0.2.44-console-review-dev/BurialGrounds-Android-v44-console-review.apk",
+  "apkSha256": "93b313b3f0c401c7d653812453e86bb66b5ffde80f08df517913812c756a5f29",
+  "apkSize": 11161267
 }
