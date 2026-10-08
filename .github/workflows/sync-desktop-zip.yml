@@ -16,13 +16,13 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Download managed Windows launcher package
+      - name: Download verified managed Windows updater payload
         shell: pwsh
         run: |
           $ErrorActionPreference = 'Stop'
-          $url = 'https://github.com/fooliosissir-cmd/Public-Client/releases/download/desktop-fkeys-home-cw-2026-10-07/BurialGrounds-Desktop-EXE-Build7.zip'
+          $url = 'https://github.com/fooliosissir-cmd/Public-Client/releases/download/desktop-managed-repair-2026-10-08-10cfdbed/BurialGrounds-Windows-Managed-20261008-10cfdbed.zip'
           $dest = 'Desktop/BurialGrounds-Windows.zip'
-          $expected = 'cccdb2d087cf8a5eda89d20ffca13df86e29dc7abca5a573f526a49e3d90f4aa'
+          $expected = '503cd366ced387dfd604b9f5e13506651819d016ee56ab0feade73eca82dd2d7'
           New-Item -ItemType Directory -Force -Path 'Desktop' | Out-Null
           Invoke-WebRequest -Uri $url -OutFile $dest
           $actual = (Get-FileHash -Algorithm SHA256 -LiteralPath $dest).Hash.ToLowerInvariant()
