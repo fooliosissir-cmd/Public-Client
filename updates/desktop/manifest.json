@@ -1,9 +1,9 @@
 {
-  "jarUrl": "https://github.com/fooliosissir-cmd/Public-Client/releases/download/untagged-eec195a170c33bc1093d/BurialGrounds-Client-FKeyRepair-10cfdbed.jar",
+  "jarUrl": "https://github.com/fooliosissir-cmd/Public-Client/releases/download/desktop-fkey-repair-2026-10-09/BurialGrounds-Client-FKeyRepair-10cfdbed.jar",
   "jarSha256": "61684805afc80a313ae6c3a47b0f1d746a1e7c369f26ba047615319ad6edb512",
   "sourceCommit": "bf4b5054553ef4ec71c49ff4e0e58ff7b718c51a",
-  "windowsPackageUrl": "https://github.com/fooliosissir-cmd/Public-Client/releases/download/desktop-managed-repair-2026-10-08-10cfdbed/BurialGrounds-Windows-Managed-20261008-10cfdbed.zip",
-  "windowsPackageSha256": "503cd366ced387dfd604b9f5e13506651819d016ee56ab0feade73eca82dd2d7",
-  "windowsPackageSize": 40917863,
-  "windowsPackageVersion": "desktop-managed-repair-2026-10-08-10cfdbed"
+  "windowsPackageUrl": "https://github.com/fooliosissir-cmd/Public-Client/releases/download/desktop-fkey-repair-2026-10-09/BurialGrounds-Windows-fkey-repair-2026-10-09.zip",
+  "windowsPackageSha256": "eed07d7d27635fdb76bbf10b17d97fd13d4123c08d224847fd440797e923fc83",
+  "windowsPackageSize": 40423354,
+  "windowsPackageVersion": "desktop-fkey-repair-2026-10-09"
 }
