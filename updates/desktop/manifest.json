@@ -1,9 +1,9 @@
 {
-    "jarUrl":  "https://github.com/fooliosissir-cmd/Public-Client/releases/download/desktop-shenron-paired-2026-10-07/BurialGrounds-Client-Shenron-10cfdbed.jar",
-    "jarSha256":  "595ea0ca3c489ca86b208d84444caafdec6557ac0efa8d0e3240ba521d8c43ad",
-    "sourceCommit":  "10cfdbed294f35739e45bd66ffd51c451795c176",
-    "windowsPackageUrl":  "https://github.com/fooliosissir-cmd/Public-Client/releases/download/desktop-managed-repair-2026-10-08-10cfdbed/BurialGrounds-Windows-Managed-20261008-10cfdbed.zip",
-    "windowsPackageSha256":  "503cd366ced387dfd604b9f5e13506651819d016ee56ab0feade73eca82dd2d7",
-    "windowsPackageSize":  40917863,
-    "windowsPackageVersion":  "desktop-managed-repair-2026-10-08-10cfdbed"
+  "jarUrl": "https://github.com/fooliosissir-cmd/Public-Client/releases/download/untagged-eec195a170c33bc1093d/BurialGrounds-Client-FKeyRepair-10cfdbed.jar",
+  "jarSha256": "61684805afc80a313ae6c3a47b0f1d746a1e7c369f26ba047615319ad6edb512",
+  "sourceCommit": "bf4b5054553ef4ec71c49ff4e0e58ff7b718c51a",
+  "windowsPackageUrl": "https://github.com/fooliosissir-cmd/Public-Client/releases/download/desktop-managed-repair-2026-10-08-10cfdbed/BurialGrounds-Windows-Managed-20261008-10cfdbed.zip",
+  "windowsPackageSha256": "503cd366ced387dfd604b9f5e13506651819d016ee56ab0feade73eca82dd2d7",
+  "windowsPackageSize": 40917863,
+  "windowsPackageVersion": "desktop-managed-repair-2026-10-08-10cfdbed"
 }
