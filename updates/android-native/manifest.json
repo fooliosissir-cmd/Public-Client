@@ -1,7 +1,7 @@
 {
-  "versionCode": 45,
-  "versionName": "0.2.45-spec-state-review-dev",
-  "apkUrl": "https://github.com/fooliosissir-cmd/Public-Client/releases/download/android-v0.2.45-spec-state-review-dev/BurialGrounds-Android-v45-spec-state-review.apk",
-  "apkSha256": "80778956f9e9989e7f030bcbf88e2b4c842718ce3fd3b4d6104e5733ca5f48f3",
-  "apkSize": 11161515
+  "versionCode": 46,
+  "versionName": "0.2.46-panel-size-review-dev",
+  "apkUrl": "https://github.com/fooliosissir-cmd/Public-Client/releases/download/android-v0.2.46-panel-size-review-dev/BurialGrounds-Android-v46-panel-size-review.apk",
+  "apkSha256": "9dcf8c52e62dc39abdfcf38508883372acb00cd5552c800ac2778e90dcd74de6",
+  "apkSize": 11162871
 }
