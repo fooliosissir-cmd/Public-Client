@@ -1,7 +1,7 @@
 {
-  "versionCode": 46,
-  "versionName": "0.2.46-panel-size-review-dev",
-  "apkUrl": "https://github.com/fooliosissir-cmd/Public-Client/releases/download/android-v0.2.46-panel-size-review-dev/BurialGrounds-Android-v46-panel-size-review.apk",
-  "apkSha256": "9dcf8c52e62dc39abdfcf38508883372acb00cd5552c800ac2778e90dcd74de6",
-  "apkSize": 11162871
+  "versionCode": 47,
+  "versionName": "0.2.47-panel-clip-fix-dev",
+  "apkUrl": "https://github.com/fooliosissir-cmd/Public-Client/releases/download/android-v0.2.47-panel-clip-fix-dev/BurialGrounds-Android-v47-panel-clip-fix.apk",
+  "apkSha256": "93a52de44477538feb6321797c78309cb0b87f300c5896c7d6e58605722c8674",
+  "apkSize": 11164063
 }
