@@ -1,7 +1,7 @@
 {
-  "versionCode": 47,
-  "versionName": "0.2.47-panel-clip-fix-dev",
-  "apkUrl": "https://github.com/fooliosissir-cmd/Public-Client/releases/download/android-v0.2.47-panel-clip-fix-dev/BurialGrounds-Android-v47-panel-clip-fix.apk",
-  "apkSha256": "93a52de44477538feb6321797c78309cb0b87f300c5896c7d6e58605722c8674",
-  "apkSize": 11164063
+  "versionCode": 48,
+  "versionName": "0.2.48-clinkz-capacity-dev",
+  "apkUrl": "https://github.com/fooliosissir-cmd/Public-Client/releases/download/android-v0.2.48-clinkz-capacity-dev/BurialGrounds-Android-v48-clinkz-capacity.apk",
+  "apkSha256": "6ad263ec86d7da031d86cd9a7470ca7866f8f19dc602d5b68f513a61372a51cd",
+  "apkSize": 11164551
 }
