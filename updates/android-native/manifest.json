@@ -1,7 +1,7 @@
 {
-  "versionCode": 49,
-  "versionName": "0.2.49-boardhunter-dev",
-  "apkUrl": "https://raw.githubusercontent.com/fooliosissir-cmd/Public-Client/main/updates/android-native/BurialGrounds-Android-v49-boardhunter.apk",
-  "apkSha256": "7088bff1ea83b658ff26080de59b529bfcd5d97389722944d5b130fc4b39de71",
-  "apkSize": 11129607
+  "versionCode": 50,
+  "versionName": "0.2.50-clinkz-capacity-dev",
+  "apkUrl": "https://raw.githubusercontent.com/fooliosissir-cmd/Public-Client/main/updates/android-native/BurialGrounds-Android-v50-restored-v48.apk",
+  "apkSha256": "a09ccb553d322f65a9841b46e26f57c7475c0173b92ee1fb4b3f204dd0237c75",
+  "apkSize": 10926510
 }
