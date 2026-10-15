@@ -1,7 +1,7 @@
 {
-  "versionCode": 51,
-  "versionName": "0.2.51-boardhunter-dev",
-  "apkUrl": "https://raw.githubusercontent.com/fooliosissir-cmd/Public-Client/main/updates/android-native/BurialGrounds-Android-v51-boardhunter.apk",
-  "apkSha256": "66cdb35dbc5d133b12825800f5944c694f3d4791414b63092de6135f38436dd8",
-  "apkSize": 11212318
+  "versionCode": 53,
+  "versionName": "0.2.53-ui-identity-CANDIDATE-dev",
+  "apkUrl": "https://raw.githubusercontent.com/fooliosissir-cmd/Public-Client/main/updates/android-native/BurialGrounds-Android-v53-ui-identity-CANDIDATE.apk",
+  "apkSha256": "71db05e4a09acf4c8f59b947c3a30fdb4401e07b754d7731127b10d29d658201",
+  "apkSize": 11221121
 }
